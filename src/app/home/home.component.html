@@ -1,0 +1,45 @@
+<div class="home__container">
+   <div class="title__content">
+      <div class="card__content">
+         <img src="../../assets/icons/files/file.svg" alt="" class="">
+         <p class="">Informe Anual</p>
+      </div>
+      <div class="card__content">
+         <img src="../../assets/icons/general/leaf.svg" alt="" class="">
+         <p class="">Huella de Carbono</p>
+      </div>
+      <div class="card__content">
+         <img src="../../assets/icons/general/user-light.svg" alt="" class="">
+         <p class="">Plan Director</p>
+      </div>
+      <div class="card__content">
+         <img src="../../assets/icons/general/book-alt.svg" alt="" class="">
+         <p class="">Materialidad</p>
+      </div>
+   </div>
+
+   <div class="main__content">
+
+      <div class="cards__container">
+         <div class="card__content" *ngFor="let item of cardsContent">
+            <div class="card__title__container">
+               <img src="{{ item.urlImage }}" alt="" class="">
+               <h4 class="">{{ item.title }}</h4>
+            </div>
+            <p class="">{{ item.text }}</p>
+         </div>
+      </div>
+
+      <aside class="aside__content">
+         <div class="collapsible__container">
+            Manuales
+            <div class="collapsible__content">
+               <a href="" class="">Imputación/Validación<span>2</span></a>
+               <a href="" class="">Certidicación<span>2</span></a>
+            </div>
+         </div>
+         <div class="collapsible__container">Cuestionarios</div>
+         <div class="collapsible__container">Más información</div>
+      </aside>
+   </div>
+</div>

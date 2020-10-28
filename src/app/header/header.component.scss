@@ -1,0 +1,38 @@
+@import "../../assets/variables";
+
+.header__container {
+   height: 70px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   background-color: $colorPrimaryRed;
+   color: $colorWhite;
+
+   .logo {
+      height: 40px;
+   }
+
+   .info__container {
+      width: 40%;
+      display: flex;
+
+      .user__container {
+   
+      }
+   
+      .sing__out {
+         height: 40px;
+         filter: invert(1);
+      }
+
+      .separator {
+         height: 40px;
+         width: 2px;
+         background-color: $colorWhite;
+      }
+   }
+
+}

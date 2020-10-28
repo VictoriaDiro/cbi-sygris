@@ -1,0 +1,37 @@
+@import "../../assets/variables";
+
+.lateral__menu__container {
+   height: 100vh;
+   width: 250px;;
+   margin-top: 70px;
+   background: $colorSecondatyRed url("../../assets/images/fondo-sidebar-left.svg") no-repeat;
+   background-size: contain;
+   background-position-y: bottom;
+   color: $colorWhite;
+
+   .welcome__message {
+
+   }
+
+   .sygris__caption {
+
+   }
+
+   .navbar__lateral__container {
+      .navbar__list {
+         margin-left: -40px;
+         .navbar__item {
+            height: 50px;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            list-style: none;
+            &:hover {
+               font-size: 1.1rem;
+               font-weight: 600;
+               background-color: $colorTertiaryRed;
+            }
+         }
+      }
+   }
+}
