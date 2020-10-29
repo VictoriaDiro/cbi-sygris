@@ -21,30 +21,36 @@
    <div class="main__content">
 
       <div class="cards__container">
+
          <div class="card__content" *ngFor="let item of cardsContent">
-            <div class="card__title__container">
-               <div class="image__container">
-                  <img src="{{ item.urlImage }}" alt="" class="">
+            <div class="card__content__box">
+               <div class="card__title__container">
+                  <div class="image__container">
+                     <img src="{{ item.urlImage }}" alt="" class="">
+                  </div>
+                  <h4 class="">{{ item.title }}</h4>
                </div>
-               <h4 class="">{{ item.title }}</h4>
+               <p class="">{{ item.text }}</p>
             </div>
-            <p class="">{{ item.text }}</p>
          </div>
+
          <mat-expansion-panel hideToggle class="card__content__collapsible">
             <mat-expansion-panel-header class="card__title__container">
-               <mat-panel-title class="title">
-                  <div class="image__container">
-                     <img src="../../assets/icons/files/file-image.svg" alt="" class="">
+               <mat-panel-title class="card__panel__title">
+                  <div class="image__title__container">
+                     <div class="image__container">
+                        <img src="../../assets/icons/files/file-image.svg" alt="" class="">
+                     </div>
+                     <h4 class="">Anexsos</h4>
                   </div>
-                  <h4 class="">Anexsos</h4>
+                  <p class="">Breve descripción, instrucción, guía, o introducción al contenido dentro de esta sección o página</p>
                </mat-panel-title>
-               <p class="">Breve descripción, instrucción, guía, o introducción al contenido dentro de esta sección o página</p>
             </mat-expansion-panel-header>
             <div class="collapsible__content">
-               <li><a class="menu-item" routerLink="/identificar" routerLinkActive="active">Identificar los grupos de interés</a></li>
-               <li><a class="menu-item" routerLink="/segmentar" routerLinkActive="active">Segmentar los GI en SGI</a></li>
-               <li><a class="menu-item" routerLink="/priorizar" routerLinkActive="active">Priorizar los SGI</a></li>
-               <li><a class="menu-item" routerLink="/relacion" routerLinkActive="active">Establecer niveles de relación</a></li>
+               <li><a class="menu__item" routerLink="/identificar" routerLinkActive="active">Identificar los grupos de interés</a></li>
+               <li><a class="menu__item" routerLink="/segmentar" routerLinkActive="active">Segmentar los GI en SGI</a></li>
+               <li><a class="menu__item" routerLink="/priorizar" routerLinkActive="active">Priorizar los SGI</a></li>
+               <li><a class="menu__item" routerLink="/relacion" routerLinkActive="active">Establecer niveles de relación</a></li>
             </div>
          </mat-expansion-panel>
       </div>
@@ -56,7 +62,7 @@
             <mat-expansion-panel-header class="title__container">
                <mat-panel-title class="title">
                   <img src="../../assets/icons/general/icon-separador.svg" alt="" class="bookmark">
-                  Manuales
+                  <p>Manuales</p>
                   <img src="../../assets/icons/general/angle-right-light.svg" alt="" class="arrow">
                </mat-panel-title>
             </mat-expansion-panel-header>
@@ -70,26 +76,31 @@
             <mat-expansion-panel-header class="title__container">
                <mat-panel-title class="title">
                   <img src="../../assets/icons/general/icon-separador.svg" alt="" class="bookmark">
-                  Cuestionarios
+                  <p>Cuestionarios</p>
                   <img src="../../assets/icons/general/angle-right-light.svg" alt="" class="arrow">
                </mat-panel-title>
             </mat-expansion-panel-header>
-            <li><a class="menu-item" routerLink="/imputacion" routerLinkActive="active">Imputación/Validación<span>2</span></a></li>
-            <li><a class="menu-item" routerLink="/certificacion" routerLinkActive="active">Certificación<span>2</span></a></li>
+            <div class="collapsible__content">
+               <li><a class="menu-item" routerLink="/imputacion" routerLinkActive="active">Imputación/Validación<span>2</span></a></li>
+               <li><a class="menu-item" routerLink="/certificacion" routerLinkActive="active">Certificación<span>2</span></a></li>
+            </div>
          </mat-expansion-panel>
 
          <mat-expansion-panel hideToggle class="collapsible__container">
             <mat-expansion-panel-header class="title__container">
                <mat-panel-title class="title">
                   <img src="../../assets/icons/general/icon-separador.svg" alt="" class="bookmark">
-                  Más información
+                  <p>Más información</p>
                   <img src="../../assets/icons/general/angle-right-light.svg" alt="" class="arrow">
                </mat-panel-title>
             </mat-expansion-panel-header>
-            <li><a class="menu-item" routerLink="/imputacion" routerLinkActive="active">Imputación/Validación<span>2</span></a></li>
-            <li><a class="menu-item" routerLink="/certificacion" routerLinkActive="active">Certificación<span>2</span></a></li>
+            <div class="collapsible__content">
+               <li><a class="menu-item" routerLink="/imputacion" routerLinkActive="active">Imputación/Validación<span>2</span></a></li>
+               <li><a class="menu-item" routerLink="/certificacion" routerLinkActive="active">Certificación<span>2</span></a></li>
+            </div>
          </mat-expansion-panel>
 
+         <button class=""><img src="../../assets/icons/general/question-circle-light.svg" alt="" class=""><p>Soporte</p></button>
       </aside>
 
    </div>

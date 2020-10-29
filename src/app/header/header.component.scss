@@ -10,29 +10,85 @@
    top: 0;
    background-color: $colorPrimaryRed;
    color: $colorWhite;
+   z-index: 1;
 
-   .logo {
-      height: 40px;
-   }
-
-   .info__container {
-      width: 40%;
+   .logo__container {
       display: flex;
-
-      .user__container {
-   
+      align-items: center;
+      .logo {
+         height: 30px;
+         margin: 0px 50px;
+         @media (max-width: 500px) {
+            margin: 0px 40px 0px 20px;
+         }
       }
-   
-      .sing__out {
-         height: 40px;
-         filter: invert(1);
-      }
-
       .separator {
          height: 40px;
          width: 2px;
+         margin-left: -20px;
          background-color: $colorWhite;
       }
    }
 
+   .info__container {
+      width: 25%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      @media (max-width: 1065px) {
+         width: 30%;
+      }
+      @media (max-width: 900px) {
+         width: 35%;
+      }
+      @media (max-width: 720px) {
+         width: 40%;
+      }
+      @media (max-width: 600px) {
+         width: 50%;
+      }
+      .user__container {
+         display: flex;
+         align-items: center;
+         .initials__container {
+            height: 30px;
+            width: 30px;
+            margin-right: 20px;
+            background-color: $colorWhite;
+            border-radius: 50%;
+            @media (max-width: 500px) {
+               margin-right: 0px;
+            }
+            .initials {
+               font-weight: 600;
+               margin: 5px 6px;
+               color: $colorPrimaryGrey;
+            }
+         }
+         .name {
+            margin: 0;
+            @media (max-width: 500px) {
+               display: none;
+            }
+         }
+      }
+
+      .spa {
+         margin: 0;
+         cursor: pointer;
+      }
+      .sing__out {
+         height: 15px;
+         filter: invert(1);
+         cursor: pointer;
+      }
+      .separator {
+         height: 40px;
+         width: 2px;
+         background-color: $colorWhite;
+         @media (max-width: 500px) {
+            display: none;
+         }
+      }
+   }
 }
