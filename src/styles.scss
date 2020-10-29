@@ -1,4 +1,17 @@
+@import "./assets/variables";
+
 html, body {
    margin: 0;
    font-family: 'Roboto', sans-serif;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// MATERIAL
+.mat-expansion-panel-content {
+   background-color: $colorWhiteSmoke;
+   border-radius: 5px;
+   .mat-expansion-panel-body {
+      padding: 24px 30px 24px 30px;
+   }
 }

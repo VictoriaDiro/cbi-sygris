@@ -23,23 +23,74 @@
       <div class="cards__container">
          <div class="card__content" *ngFor="let item of cardsContent">
             <div class="card__title__container">
-               <img src="{{ item.urlImage }}" alt="" class="">
+               <div class="image__container">
+                  <img src="{{ item.urlImage }}" alt="" class="">
+               </div>
                <h4 class="">{{ item.title }}</h4>
             </div>
             <p class="">{{ item.text }}</p>
          </div>
+         <mat-expansion-panel hideToggle class="card__content__collapsible">
+            <mat-expansion-panel-header class="card__title__container">
+               <mat-panel-title class="title">
+                  <div class="image__container">
+                     <img src="../../assets/icons/files/file-image.svg" alt="" class="">
+                  </div>
+                  <h4 class="">Anexsos</h4>
+               </mat-panel-title>
+               <p class="">Breve descripción, instrucción, guía, o introducción al contenido dentro de esta sección o página</p>
+            </mat-expansion-panel-header>
+            <div class="collapsible__content">
+               <li><a class="menu-item" routerLink="/identificar" routerLinkActive="active">Identificar los grupos de interés</a></li>
+               <li><a class="menu-item" routerLink="/segmentar" routerLinkActive="active">Segmentar los GI en SGI</a></li>
+               <li><a class="menu-item" routerLink="/priorizar" routerLinkActive="active">Priorizar los SGI</a></li>
+               <li><a class="menu-item" routerLink="/relacion" routerLinkActive="active">Establecer niveles de relación</a></li>
+            </div>
+         </mat-expansion-panel>
       </div>
 
+
       <aside class="aside__content">
-         <div class="collapsible__container">
-            Manuales
+
+         <mat-expansion-panel hideToggle class="collapsible__container">
+            <mat-expansion-panel-header class="title__container">
+               <mat-panel-title class="title">
+                  <img src="../../assets/icons/general/icon-separador.svg" alt="" class="bookmark">
+                  Manuales
+                  <img src="../../assets/icons/general/angle-right-light.svg" alt="" class="arrow">
+               </mat-panel-title>
+            </mat-expansion-panel-header>
             <div class="collapsible__content">
-               <a href="" class="">Imputación/Validación<span>2</span></a>
-               <a href="" class="">Certidicación<span>2</span></a>
+               <li><a class="menu-item" routerLink="/imputacion" routerLinkActive="active">Imputación/Validación<span>2</span></a></li>
+               <li><a class="menu-item" routerLink="/certificacion" routerLinkActive="active">Certificación<span>2</span></a></li>
             </div>
-         </div>
-         <div class="collapsible__container">Cuestionarios</div>
-         <div class="collapsible__container">Más información</div>
+         </mat-expansion-panel>
+
+         <mat-expansion-panel hideToggle class="collapsible__container">
+            <mat-expansion-panel-header class="title__container">
+               <mat-panel-title class="title">
+                  <img src="../../assets/icons/general/icon-separador.svg" alt="" class="bookmark">
+                  Cuestionarios
+                  <img src="../../assets/icons/general/angle-right-light.svg" alt="" class="arrow">
+               </mat-panel-title>
+            </mat-expansion-panel-header>
+            <li><a class="menu-item" routerLink="/imputacion" routerLinkActive="active">Imputación/Validación<span>2</span></a></li>
+            <li><a class="menu-item" routerLink="/certificacion" routerLinkActive="active">Certificación<span>2</span></a></li>
+         </mat-expansion-panel>
+
+         <mat-expansion-panel hideToggle class="collapsible__container">
+            <mat-expansion-panel-header class="title__container">
+               <mat-panel-title class="title">
+                  <img src="../../assets/icons/general/icon-separador.svg" alt="" class="bookmark">
+                  Más información
+                  <img src="../../assets/icons/general/angle-right-light.svg" alt="" class="arrow">
+               </mat-panel-title>
+            </mat-expansion-panel-header>
+            <li><a class="menu-item" routerLink="/imputacion" routerLinkActive="active">Imputación/Validación<span>2</span></a></li>
+            <li><a class="menu-item" routerLink="/certificacion" routerLinkActive="active">Certificación<span>2</span></a></li>
+         </mat-expansion-panel>
+
       </aside>
+
    </div>
 </div>

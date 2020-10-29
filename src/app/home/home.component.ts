@@ -47,12 +47,7 @@ export class HomeComponent implements OnInit {
          urlImage: '../../assets/icons/files/file-invoice.svg',
          title: 'Sociedad',
          text: 'Breve descripción, instrucción, guía, o introducción al contenido dentro de esta sección o página'
-      },
-      {
-         urlImage: '../../assets/icons/files/file-image.svg',
-         title: 'Anexos',
-         text: 'Breve descripción, instrucción, guía, o introducción al contenido dentro de esta sección o página'
-      },
+      }
 
    ];
 
