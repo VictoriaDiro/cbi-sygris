@@ -8,14 +8,24 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 // MATERIAL
-.mat-expansion-panel-content {
-   background-color: $colorWhiteSmoke;
-   border-radius: 5px;
-   .mat-expansion-panel-body {
-      padding: 24px 30px 24px 30px;
-   }
-}
+.mat-expansion-panel {
 
-.main__content .mat-expansion-panel-body {
-   background-color: $colorWhite;
+   .mat-expansion-panel-content {
+     background-color: $colorWhiteSmoke;
+     border-radius: 5px;
+     .mat-expansion-panel-body {
+        padding: 24px 30px 24px 30px;
+        background-color: $colorWhite;
+     }
+   }
+   .main__content .mat-expansion-panel-body {
+     background-color: $colorWhite;
+   }
+   &.mat-expanded {
+      .mat-expansion-panel-header .mat-expansion-panel-header-title {
+         .arrow {
+           transform: rotate(90deg);
+         }
+      }
+   }
 }

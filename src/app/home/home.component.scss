@@ -13,6 +13,7 @@
          margin: 10px;
          padding: 0px 20px;
          display: flex;
+         justify-content: center;
          align-items: center;
          background-color: $colorWhiteSmoke;
          border-radius: 5px;
@@ -33,6 +34,9 @@
             @media (max-width: 1090px) {
                display: none;
             }
+         }
+         &:hover {
+           background-color: #dfdfdf;
          }
       }
    }
@@ -132,6 +136,11 @@
                      text-decoration: none;
                      color: $colorSecondaryGrey;
                   }
+               }
+            }
+            &:hover {
+               .mat-expansion-panel-header {
+                  background-color: transparent;
                }
             }
          }
